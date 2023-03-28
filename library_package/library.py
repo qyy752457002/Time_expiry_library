@@ -8,7 +8,7 @@ class Library:
         return super(Library, cls).__new__(cls)
     
     def __init__(self, path: str, trialPeriod: float):
-
+        
         # create the file path
         self.filePath = path + "timestamp_file.txt"
         # set trial period
@@ -194,4 +194,3 @@ if __name__ == "__main__":
         print("current timestamp: ", LibraryAPI.inspect())
         # check periodically
         time.sleep(checkPeriod)
-
